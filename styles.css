@@ -66,9 +66,14 @@ body{
 	margin: auto;
 }
 
+br{
+	border: var(--ch-gold) solid 2px;
+}
+
 header{
 	background-color: var(--md-blue);
 	color: var(--linen);
+	padding: 5%;
 }
 
 header img{
@@ -92,13 +97,53 @@ nav{
 	color: var(--md-blue);
 	font-weight: bold;
 	font-size: 1.5rem;
+	padding: 10px;
 }
 nav ul{
 	display: flex;
-
 }
 
+main h2{
+	font-size: 2rem;
+}
 
+.welcome{
+	padding: 10% 0% 5% 0%;
+}
+
+.box {
+	background-color: var(--o-green);
+	color: var(--linen);
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 10px;
+}
+
+.box h3{
+	font-size: 2rem;
+	font-weight: bold;
+	margin: .5rem;
+}
+
+.box p{
+	margin: .5rem;
+}
+
+.gallery{
+	border-radius: 10px;
+	box-shadow: 5px 5px 8px var(--md-blue);
+	margin: 1rem;
+}
+
+.gallery p{
+	padding: 1rem;
+}
+
+footer{
+	background-color: var(--md-blue);
+	color: var(--linen);
+	padding: 10%;
+}
 /*Media Query(medium)*/
 
 /*Media Query(large)*/
