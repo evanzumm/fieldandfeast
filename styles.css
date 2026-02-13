@@ -48,8 +48,56 @@ table {
 }
 
 /*Root Variables*/
-
+:root{
+	--md-blue: #1f2a44;
+	--o-green: #76885B;
+	--ch-gold: #e5c185;
+	--linen: #f8f4ec;
+	--dk-charcoal: #2b2b2b;
+	--white: #faf9f6;
+	--font-family: 'Playfair Display';
+}
 /*Global Styles (small)*/
+body{
+	background-color: var(--linen);
+	color: var(--md-blue);
+	font-family: var(--font-family);
+	max-width: 600px;
+	margin: auto;
+}
+
+header{
+	background-color: var(--md-blue);
+	color: var(--linen);
+}
+
+header img{
+	display: flex;
+	justify-content: center;
+}
+
+header h1{
+	font-family: var(--font-family);
+	font-size: 4.5rem;
+	font-weight: bold;
+}
+
+header p{
+	font-size: 1.25rem;
+	font-style: italic;
+}
+
+nav{
+	background-color: var(--ch-gold);
+	color: var(--md-blue);
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+nav ul{
+	display: flex;
+
+}
+
 
 /*Media Query(medium)*/
 
