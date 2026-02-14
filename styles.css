@@ -58,49 +58,74 @@ table {
 	--font-family: 'Playfair Display';
 }
 /*Global Styles (small)*/
+hr{
+	border-top: var(--ch-gold) solid 2px;
+	max-width: 95%;
+}
+
 body{
-	background-color: var(--linen);
+	background-color: var(--white);
 	color: var(--md-blue);
 	font-family: var(--font-family);
 	max-width: 600px;
 	margin: auto;
-}
-
-br{
-	border: var(--ch-gold) solid 2px;
+	line-height: 150%;
+	font-weight: 500;
 }
 
 header{
 	background-color: var(--md-blue);
-	color: var(--linen);
+	color: var(--white);
 	padding: 5%;
 }
 
 header img{
 	display: flex;
 	justify-content: center;
+	margin: auto;
 }
 
 header h1{
 	font-family: var(--font-family);
 	font-size: 4.5rem;
 	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	padding: 1rem;
 }
 
 header p{
 	font-size: 1.25rem;
 	font-style: italic;
+	display: flex;
+	justify-content: center;
+	padding: 2rem .5rem 0rem 0rem;
 }
 
 nav{
 	background-color: var(--ch-gold);
 	color: var(--md-blue);
-	font-weight: bold;
+	font-weight: 800;
 	font-size: 1.5rem;
 	padding: 10px;
 }
 nav ul{
 	display: flex;
+	justify-content: center;
+	padding: .5rem;
+}
+
+nav ul a{
+	margin: auto;
+	text-decoration: none;
+}
+
+nav ul a:visited{
+	color: var(--md-blue);
+}
+
+nav ul a:hover{
+	font-style: italic;
 }
 
 main h2{
@@ -108,7 +133,24 @@ main h2{
 }
 
 .welcome{
-	padding: 10% 0% 5% 0%;
+	padding: 4rem 1rem 0rem 1rem;
+}
+
+.welcome h2{
+	font-weight: 600;
+}
+
+.welcome p{
+	padding: 1rem 0rem;
+}
+
+.offerings{
+	padding: 2rem 1rem;
+}
+
+.offerings h2{
+	font-weight: 600;
+	padding: 0rem 1rem .75rem 1rem;
 }
 
 .box {
@@ -117,11 +159,12 @@ main h2{
 	padding: 1rem;
 	margin: 1rem;
 	border-radius: 10px;
+	box-shadow: 2px 0px 5px gray;
 }
 
 .box h3{
-	font-size: 2rem;
-	font-weight: bold;
+	font-size: 1.75rem;
+	font-weight: 800;
 	margin: .5rem;
 }
 
@@ -129,21 +172,56 @@ main h2{
 	margin: .5rem;
 }
 
-.gallery{
-	border-radius: 10px;
-	box-shadow: 5px 5px 8px var(--md-blue);
-	margin: 1rem;
+.box li{
+	list-style: disc;
+	list-style-position: inside;
+	margin: .5rem;;
+}
+
+.gallery h2{
+	padding: 2rem 1rem 0.75rem 1rem;
 }
 
 .gallery p{
+	padding: 0rem 1rem;
+}
+
+.image{
+	border-radius: 10px;
+	box-shadow: 2px 0px 5px gray;
+	margin: 1rem;
+}
+
+.image p{
 	padding: 1rem;
+	font-style: italic;
+	display: flex;
+	justify-content: center;
+}
+
+.button{
+	background-color: var(--o-green);
+	border-radius: 10px;
+	margin: 1.5rem 0rem;
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+	font-size: 1.5rem;
+	color: var(--white);
+	font-weight: 600;
 }
 
 footer{
 	background-color: var(--md-blue);
 	color: var(--linen);
 	padding: 10%;
+	margin-top: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
+
+
 /*Media Query(medium)*/
 
 /*Media Query(large)*/
