@@ -109,14 +109,17 @@ nav{
 	font-size: 1.5rem;
 	padding: 10px;
 }
-nav ul{
+nav ul {
 	display: flex;
 	justify-content: center;
 	padding: .5rem;
 }
 
-nav ul a{
+nav ul li{
 	margin: auto;
+}
+
+nav ul a{
 	text-decoration: none;
 }
 
@@ -221,6 +224,11 @@ footer{
 	align-items: center;
 }
 
+footer > a{
+	text-decoration: none;
+	color: var(--ch-gold);
+	font-weight: 900;
+}
 
 /*Media Query(medium)*/
 
